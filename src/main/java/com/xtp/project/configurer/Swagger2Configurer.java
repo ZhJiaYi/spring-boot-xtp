@@ -1,6 +1,6 @@
-package com.company.project.configurer;
+package com.xtp.project.configurer;
 
-import com.company.project.core.ProjectConstant;
+import com.xtp.project.core.ProjectConstant;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

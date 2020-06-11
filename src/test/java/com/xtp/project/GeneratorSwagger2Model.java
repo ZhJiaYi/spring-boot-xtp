@@ -1,4 +1,4 @@
-package com.company.project;
+package com.xtp.project;
 
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;

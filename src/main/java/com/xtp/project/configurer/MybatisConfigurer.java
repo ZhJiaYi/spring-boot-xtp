@@ -1,4 +1,4 @@
-package com.company.project.configurer;
+package com.xtp.project.configurer;
 
 
 import com.github.pagehelper.PageHelper;
@@ -15,7 +15,7 @@ import tk.mybatis.spring.mapper.MapperScannerConfigurer;
 import javax.sql.DataSource;
 import java.util.Properties;
 
-import static com.company.project.core.ProjectConstant.*;
+import static com.xtp.project.core.ProjectConstant.*;
 
 /**
  * Mybatis & Mapper & PageHelper 配置

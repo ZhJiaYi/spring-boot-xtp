@@ -37,7 +37,7 @@ public class ${modelNameUpperCamel}Controller {
         PageHelper.startPage(page, size);
         List<${modelNameUpperCamel}> list = ${modelNameLowerCamel}Service.findAll();
         PageInfo<${modelNameUpperCamel}> pageInfo = new PageInfo<>(list);
-        return ResultGenerator.genSuccessResult(pageInfo);
+        return ResultGenerator.getSuccessResult(pageInfo);
     }
     @PostMapping
     @ApiOperation(value = "添加数据",notes = "添加新的数据",httpMethod = "POST")
@@ -46,7 +46,7 @@ public class ${modelNameUpperCamel}Controller {
     })
     public Result add(@RequestBody ${modelNameUpperCamel} ${modelNameLowerCamel}) {
         ${modelNameLowerCamel}Service.save(${modelNameLowerCamel});
-        return ResultGenerator.genSuccessResult();
+        return ResultGenerator.getSuccessResult();
     }
 
     @DeleteMapping("/{id}")
@@ -56,7 +56,7 @@ public class ${modelNameUpperCamel}Controller {
     })
     public Result delete(@PathVariable Integer id) {
         ${modelNameLowerCamel}Service.deleteById(id);
-        return ResultGenerator.genSuccessResult();
+        return ResultGenerator.getSuccessResult();
     }
 
     @PutMapping
@@ -66,7 +66,7 @@ public class ${modelNameUpperCamel}Controller {
     })
     public Result update(@RequestBody ${modelNameUpperCamel} ${modelNameLowerCamel}) {
         ${modelNameLowerCamel}Service.update(${modelNameLowerCamel});
-        return ResultGenerator.genSuccessResult();
+        return ResultGenerator.getSuccessResult();
     }
 
     @GetMapping("/{id}")
@@ -76,7 +76,7 @@ public class ${modelNameUpperCamel}Controller {
     })
     public Result detail(@PathVariable Integer id) {
         ${modelNameUpperCamel} ${modelNameLowerCamel} = ${modelNameLowerCamel}Service.findById(id);
-        return ResultGenerator.genSuccessResult(${modelNameLowerCamel});
+        return ResultGenerator.getSuccessResult(${modelNameLowerCamel});
     }
 
 

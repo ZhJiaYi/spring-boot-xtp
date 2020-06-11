@@ -11,15 +11,15 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static com.company.project.core.ProjectConstant.*;
+import static com.xtp.project.core.ProjectConstant.*;
 
 /**
  * 代码生成器，根据数据表名称生成对应的Model、Mapper、Service、Controller简化开发。
  */
 public class CodeGenerator {
     //JDBC配置，请修改为你项目的实际配置
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/test_user"+ "?serverTimezone=GMT%2B8";
-    private static final String JDBC_USERNAME = "root";
+    private static final String JDBC_URL = "jdbc:mysql://119.23.182.163:3306/xtp"+ "?serverTimezone=GMT%2B8";
+    private static final String JDBC_USERNAME = "xtp";
     private static final String JDBC_PASSWORD = "123456";
     private static final String JDBC_DIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
 
@@ -90,7 +90,7 @@ public class CodeGenerator {
          *  该插件位置默认放在test文件夹里边，（因为与项目运行无关）
          */
         PluginConfiguration swaggerConfiguration = new PluginConfiguration();
-        swaggerConfiguration.setConfigurationType("com.company.project.GeneratorSwagger2Model");
+        swaggerConfiguration.setConfigurationType("com.xtp.project.GeneratorSwagger2Model");
         swaggerConfiguration.addProperty("apiModelAnnotationPackage", "io.swagger.annotations.ApiModel");
         swaggerConfiguration.addProperty("apiModelPropertyAnnotationPackage", "io.swagger.annotations.ApiModelProperty");
         context.addPluginConfiguration(swaggerConfiguration);
